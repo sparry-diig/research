@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Something, something</title>
+</head>
+<body>
+    <table>
+        <tr th:each="jt : ${allJobTypes}">
+            <td th:text="${{jt.pkJobTypeId}}"></td>
+            <td th:text="${{jt.jobType}}"></td>
+            <td th:text="${{jt.instructionClass}}"></td>
+            <td th:text="${{jt.jobTypeCode}}"></td>
+            <td th:text="${{jt.isActive}}"></td>
+            <td th:text="${{jt.createdOn}}"></td>
+            <td th:text="${{jt.createdBy}}"></td>
+        </tr>
+    </table>
+</body>
+</html>
